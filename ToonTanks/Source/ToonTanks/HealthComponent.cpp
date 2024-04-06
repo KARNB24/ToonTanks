@@ -50,3 +50,13 @@ void UHealthComponent::DamageTaken(AActor *DamagedActor, float Damage, const UDa
 
 
 }
+
+float UHealthComponent::GetHealth()
+{
+	return Health;
+}
+
+void UHealthComponent::SetHealth(float health)
+{
+	Health = health;
+}

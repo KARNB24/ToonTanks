@@ -28,6 +28,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	void GameOver(bool bWonGame);
 
+	UFUNCTION(BlueprintCallable)
+	int32 NumberOfTowers();
+
 
 
 private:

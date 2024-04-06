@@ -28,6 +28,9 @@ public:
 
 	bool bAlive = true;
 
+	UFUNCTION(BlueprintCallable) 
+	float TankHealth();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -44,6 +47,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float TurnRate = 45.f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	float MaxHealth = 200.f;
 
 	void Move(float Value);
 	void Turn(float Value);

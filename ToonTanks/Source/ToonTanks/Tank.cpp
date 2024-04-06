@@ -5,6 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "HealthComponent.h"
 
 
 ATank::ATank()
@@ -75,5 +76,10 @@ void ATank::Turn(float Value)
     DeltaRotation.Yaw = Value * TurnRate * UGameplayStatics::GetWorldDeltaSeconds(this);
     AddActorLocalRotation(DeltaRotation, true);
     
+}
+
+float ATank::TankHealth()
+{
+	return FindComponentByClass<UHealthComponent>()->GetHealth();
 }
 

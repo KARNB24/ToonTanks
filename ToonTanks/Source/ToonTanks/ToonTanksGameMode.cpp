@@ -77,6 +77,10 @@ int32 AToonTanksGameMode::GetTargetTowerCount()
     return Towers.Num();
 }
 
+int32 AToonTanksGameMode::NumberOfTowers()
+{
+    return TargetTowers;
+}
 
 
 
