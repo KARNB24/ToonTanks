@@ -33,5 +33,9 @@ Link: https://drive.google.com/file/d/1l34NzcV3D9wtnjx44Y1uJK_W6LFZJlfc/view?usp
 
 To experience Toon Tanks, Clone this repo and run it in your own version of Unreal Engine 5.3.2
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
 Enjoy playing Toon Tanks and have fun destroying those enemy tank turrets! 🎮
